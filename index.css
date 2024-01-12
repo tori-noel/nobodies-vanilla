@@ -112,3 +112,26 @@ p {
 .highlight {
   color: rgb(255, 128, 62);
 }
+.centered-list ul {
+  text-align: center;
+  list-style: none;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  border: 5px rgb(255, 128, 62) solid;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: #0f2353;
+}
