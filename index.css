@@ -135,3 +135,8 @@ a {
   text-decoration: none;
   color: #0f2353;
 }
+
+.ig-icon {
+  font-size: 30px;
+  color: rgb(255, 128, 62);
+}
