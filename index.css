@@ -34,11 +34,9 @@ h3 {
   border: 5px rgb(255, 128, 62) solid;
   border-radius: 5px;
 }
-h4 {
-  text-align: center;
-}
 ul li {
   font-size: 24px;
+  padding: 20px;
 }
 
 p {
@@ -95,6 +93,9 @@ p {
 
 .title {
   text-align: center;
+}
+.sub-header {
+  color: rgb(255, 128, 62);
 }
 
 .name {
