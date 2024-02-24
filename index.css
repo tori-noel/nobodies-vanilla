@@ -1,7 +1,7 @@
 body {
   font-family: "League Spartan", sans-serif;
-  background-color: rgb(2, 27, 84);
-  color: #030e2f;
+  background-color: white;
+  color: black;
   margin: 0;
 }
 
@@ -14,7 +14,7 @@ h1 {
   font-size: 34px;
   display: inline-block;
   padding: 8px;
-  border: 8px rgb(255, 128, 62) solid;
+  border: 8px rgb(142, 72, 230) solid;
   border-radius: 5px;
   margin: 20px;
 }
@@ -22,7 +22,7 @@ h2 {
   font-size: 32px;
   display: inline-block;
   padding: 8px;
-  border: 8px rgb(255, 128, 62) solid;
+  border: 8px rgb(142, 72, 230) solid;
   border-radius: 5px;
 }
 
@@ -31,7 +31,7 @@ h3 {
   font-size: 24px;
   display: inline-block;
   padding: 8px;
-  border: 5px rgb(255, 128, 62) solid;
+  border: 5px rgb(142, 72, 230) solid;
   border-radius: 5px;
 }
 ul li {
@@ -86,7 +86,7 @@ p {
 
 .bio {
   font-size: 16px;
-  border: 5px #0f2353 solid;
+  border: 5px #a8abb1 solid;
   border-radius: 5px;
   padding: 20px;
 }
@@ -95,24 +95,24 @@ p {
   text-align: center;
 }
 .sub-header {
-  color: rgb(255, 128, 62);
+  color: rgb(142, 72, 230);
 }
 
 .name,
 .writer-name {
-  color: rgb(255, 128, 62);
+  color: rgb(142, 72, 230);
   font-size: 24px;
 }
 
 .header-paragraph {
-  border: 5px #0f2353 solid;
+  border: 5px #a8abb1 solid;
   margin: 30px;
   text-align: center;
   border-radius: 5px;
 }
 
 .highlight {
-  color: rgb(255, 128, 62);
+  color: rgb(142, 72, 230);
 }
 .centered-list ul {
   text-align: center;
@@ -127,7 +127,7 @@ p {
 
 .btn {
   display: inline-block;
-  border: 5px rgb(255, 128, 62) solid;
+  border: 5px rgb(142, 72, 230) solid;
   border-radius: 5px;
   padding: 8px;
   font-size: 28px;
@@ -135,12 +135,12 @@ p {
 
 a {
   text-decoration: none;
-  color: #0f2353;
+  color: #a8abb1;
 }
 
 .ig-icon {
   font-size: 30px;
-  color: rgb(255, 128, 62);
+  color: rgb(142, 72, 230);
 }
 
 @media (max-width: 960px) {
