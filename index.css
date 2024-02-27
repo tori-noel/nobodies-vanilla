@@ -21,6 +21,8 @@ h1 {
 h2 {
   font-size: 32px;
   display: inline-block;
+  margin: 0 auto;
+  text-align: center;
   padding: 8px;
   border: 8px rgb(142, 72, 230) solid;
   border-radius: 5px;
