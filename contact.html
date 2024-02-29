@@ -82,29 +82,29 @@
       <h4 class="p-3">Sign up for our newsletter!</h4>
       <form name="submit-to-google-sheet" class="p-3">
         <input
-          type="email"
-          name="Email"
-          placeholder="email adress"
-          required
-          class="p-1 m-1"
-        />
-        <input
           type="name"
           name="First Name"
           placeholder="first name"
           required
-          class="p-1 m-1"
+          class="p-1 m-1 input"
         />
         <input
           type="name"
           name="Last Name"
           placeholder="last name"
           required
-          class="p-1 m-1"
+          class="p-1 m-1 input"
+        />
+        <input
+          type="email"
+          name="Email"
+          placeholder="email adress"
+          required
+          class="p-1 m-1 input"
         />
         <button class="p-1" type="submit">submit</button>
       </form>
-      <span id="msg"> </span>
+      <span id="msg" class="msg"> </span>
     </div>
     <script>
       const scriptURL =
@@ -116,7 +116,7 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "Thank you!";
+            msg.innerHTML = "Thank you for subscribing!";
             setTimeout(function () {
               msg.innerHTML = " ";
             }, 5000);
