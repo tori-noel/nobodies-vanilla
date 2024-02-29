@@ -13,6 +13,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -67,11 +70,60 @@
         <p class="text-center">thenobodiesco@gmail.com</p>
         <p class="text-center">
           follow us <br />
-          <i class="fa-brands fa-instagram ig-icon"></i>
+          <a href="https://www.instagram.com/thenobodiesco/"
+            ><i class="fa-brands fa-instagram ig-icon"></i>
+          </a>
         </p>
       </div>
       <br />
       <br />
     </div>
+    <div class="header-paragraph">
+      <h4 class="p-3">Sign up for our newsletter!</h4>
+      <form name="submit-to-google-sheet" class="p-3">
+        <input
+          type="email"
+          name="Email"
+          placeholder="email adress"
+          required
+          class="p-1 m-1"
+        />
+        <input
+          type="name"
+          name="First Name"
+          placeholder="first name"
+          required
+          class="p-1 m-1"
+        />
+        <input
+          type="name"
+          name="Last Name"
+          placeholder="last name"
+          required
+          class="p-1 m-1"
+        />
+        <button class="p-1" type="submit">submit</button>
+      </form>
+      <span id="msg"> </span>
+    </div>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw6xRf1uIKgZrEajdCicVqY5jA8Nk71fOmNV6PQ1_uf2UVhvAcc0Rhni6f8nfgbsgR0/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Thank you!";
+            setTimeout(function () {
+              msg.innerHTML = " ";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
