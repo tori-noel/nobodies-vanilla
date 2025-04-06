@@ -183,7 +183,9 @@ button:hover {
   p {
     font-size: 16px;
   }
-
+.carousel {
+  margin: 15px;
+}
   .centered-list li {
     font-size: 16px;
   }
