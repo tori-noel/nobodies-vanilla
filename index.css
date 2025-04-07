@@ -137,6 +137,14 @@ p {
   font-size: 28px;
 }
 
+.btn-s{
+  display: inline-block;
+  border: 5px rgb(142, 72, 230) solid;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+}
+
 a {
   text-decoration: none;
   color: #a8abb1;
